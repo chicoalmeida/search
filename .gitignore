@@ -1,0 +1,17 @@
+# Created by .ignore support plugin (hsz.mobi)
+target/
+
+#\## STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
