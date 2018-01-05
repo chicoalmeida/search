@@ -17,7 +17,7 @@ git
 Clone the project
 
 ```
-$ git clone ...
+$ git clone https://github.com/chicoalmeida/search.git
 ```
 
 Open the directory
@@ -31,7 +31,7 @@ On the root of the project, download and unzip the data:
 ```
 $ curl -O https://s3-sa-east-1.amazonaws.com/luizalabs-tech-challenges/movies.zip
 
-$ unzip moviez.zip
+$ unzip movies.zip
 ```
 
 Build the project
@@ -42,14 +42,8 @@ $ mvn clean install
 
 ## Running the app
 
-After extract and build the project access the target directory:
-
 ```
-$ cd target
-```
-
-```
-java -jar search.jar “walt disney”
+java -jar target/search.jar “walt disney”
 ```
 
 
