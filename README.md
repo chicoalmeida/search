@@ -45,10 +45,3 @@ $ mvn clean install
 ```
 java -jar target/search.jar “walt disney”
 ```
-
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc

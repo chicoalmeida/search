@@ -23,8 +23,7 @@ public class App {
     private static final String PATH = "./data";
 
     public static void main(String[] args) {
-//        final String[] query = args[0].split(" ");
-        final String[] query = {"walt", "disney"};
+        final String[] query = args[0].split(" ");
         if (query.length == 0) {
             throw new IllegalArgumentException("You must to specify a query string");
         }
@@ -45,7 +44,7 @@ public class App {
         Searcher searcher = new SearcherImpl(new TrieSearcher());
         Set<String> paths = searcher.searchFiles(query, index);
         Instant finishSearch = Instant.now();
-        printResult(paths,  "test");
+        printResult(paths, args[0]);
         System.out.println(String.format("This search took: %s/ms \n", TimeUnit.NANOSECONDS.toMillis(Duration.between(startSearch, finishSearch).getNano())));
     }
 
